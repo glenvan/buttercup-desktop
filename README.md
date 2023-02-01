@@ -36,7 +36,7 @@ The current stable version is **2**. We recommend upgrading if you're still on v
 Buttercup Desktop is officially supported on:
 
  * Most linux distributions (x64), such as Ubuntu
- * MacOS (x64, non-ARM)
+ * MacOS (x64/arm64 Universal)
  * Windows 10 (x64)
 
 #### Arch Linux

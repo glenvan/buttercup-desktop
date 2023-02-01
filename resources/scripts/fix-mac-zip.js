@@ -16,7 +16,7 @@ module.exports = (buildResults) => {
     if (!hasMacZip) return;
     console.log("Zipping Started");
     execSync(
-        `ditto -c -k --sequesterRsrc --keepParent --zlibCompressionLevel 9 "${APP_DIST_PATH}/mac/${APP_NAME}.app" "${APP_DIST_PATH}/${APP_NAME}-${APP_VERSION}-mac.zip"`
+        `ditto -c -k --sequesterRsrc --keepParent --zlibCompressionLevel 9 "${APP_DIST_PATH}/mac-universal/${APP_NAME}.app" "${APP_DIST_PATH}/${APP_NAME}-${APP_VERSION}-mac.zip"`
     );
     console.log("Zipping Completed");
     const ymlPath = path.join(APP_DIST_PATH, "latest-mac.yml");

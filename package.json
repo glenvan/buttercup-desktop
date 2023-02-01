@@ -101,10 +101,16 @@
       "entitlementsInherit": "./resources/build/entitlements.plist",
       "gatekeeperAssess": false,
       "hardenedRuntime": true,
-      "icon": "./resources/build/icon.icns"
+      "icon": "./resources/build/icon.icns",
+      "target": [
+        {
+          "target": "default",
+          "arch": "universal"
+        }
+      ]
     },
     "dmg": {
-      "artifactName": "${productName}-${os}-x64-${version}.${ext}",
+      "artifactName": "${productName}-${os}-universal-${version}.${ext}",
       "background": "./resources/build/background@2x.png",
       "contents": [
         {
